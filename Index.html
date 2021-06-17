@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Mission to Mars</title>
+  </head>
+
+  <div class="container-fluid">
+
+  <body>
+    <div class="jumbotron text-center">
+      <h1 class="display-3" ><b>Mission to Mars</b></h1>
+      <hr class="my-4">
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/scrape" role="button">New Data Scrape</a>
+      </p>
+    </div>
+
+    <div class="container-fluid">
+      <h2><b>Mars Currently</b></h2>
+      <h5>{{ mars_news_title }}</h5>
+      <p>{{ mars_news_paragraph }}</p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-8">
+        <h2><b>Featured Mars Image</b></h2>
+        <img src="/HTML_image.jpg" alt="Current Feature" style="max-width:400px; max-height: 600px;">
+      </div>
+      <br>
+        <h5>Mars Facts</h5>
+        <div>{{ insert mars_table here }}</div>
+      </div>
+      </div>
+    </div>
+    <br>
+    <div class="container-fluid text-center">
+      <h2><b>Mars Hemispheres</b></h2>
+      <div class="row">
+        {added_img}
+        <div class="col-md-6">
+          <div class="card" style="display: grid;">
+            <img src="{img}" class="card-img-top" alt="The Red Planet">
+            <div class="card-body">
+              <p class="card-text"><b> {{ img_title }} </b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+  </body>
+  </div>
+</html>
